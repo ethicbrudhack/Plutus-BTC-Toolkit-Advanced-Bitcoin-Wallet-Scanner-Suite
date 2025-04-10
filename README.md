@@ -14,8 +14,8 @@ Plutus BTC Toolkit is a powerful, self-contained Bitcoin scanning suite designed
 # Enter your license password when prompted
 
 Full video demo available on my channel: [https://youtu.be/9DyW-0Wz8gw]
-PlutusBTCBitScanner(https://drive.google.com/file/d/1g-qBns48vlAzsS6QGcHmRgzNu7O-juPv/view?usp=drive_link)
-LINK for BTCSeedScanner (SOON! Loading !)
+PlutusBTCBitScanner: https://drive.google.com/file/d/1g-qBns48vlAzsS6QGcHmRgzNu7O-juPv/view?usp=drive_link
+LINK for BTCSeedScanner :https://drive.google.com/file/d/1XblGd2tc2apLhARBMDQ1MufrRJdyeMyI/view?usp=drive_link
 
 
  🔧 Key Features
