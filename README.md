@@ -1,91 +1,110 @@
-# Plutus-BTC-Toolkit-Advanced-Bitcoin-Wallet-Scanner-Suite
-Link for youtube:https://youtu.be/9DyW-0Wz8gw
-LINK for PlutusBTCBitScanner(https://drive.google.com/file/d/1g-qBns48vlAzsS6QGcHmRgzNu7O-juPv/view?usp=drive_link)
- LINK for BTCSeedScanner (SOON! Loading !)
-
-🔐 Plutus BTC Toolkit — Advanced Bitcoin Wallet Scanner Suite
-Welcome to Plutus BTC Toolkit – a powerful, dual-program suite built for ethical researchers, penetration testers, and Bitcoin forensic analysts. This package includes two advanced scanning tools capable of identifying inactive Bitcoin wallets with past balances.
+# ⚡ Plutus BTC Toolkit – Advanced Bitcoin Wallet Scanner Suite
 
 🚨These Tools search only for unused, abandoned, lost !   
 🔑Only wallets with a confirmed balance or past activity !
 
-Plutus helps you explore the Bitcoin keyspace in two intelligent ways:
+Plutus BTC Toolkit is a powerful, self-contained Bitcoin scanning suite designed for ethical testing, keyspace exploration, and wallet analysis. This tool allows users to scan private key ranges and BIP39 seed phrases, comparing generated addresses against a 200M+ record local database of BTC addresses with past balance or transaction history.
 
-🧠 Plutus BTC Seed Scanner — Scans using BIP39 mnemonic seed phrases
+⚠️ For educational and ethical purposes only.
 
-⚙️ Plutus BTC Bit Scanner — Scans by generating private keys directly from a defined bit range
 
-Each tool uses a local BTC address database and advanced algorithms to check against known addresses that have held balances in the past.
+🚀 Quick Start
+# Download the .exe version
+# Run directly — no Python, pip, or external installs required
+# Enter your license password when prompted
 
-🧩 Included Tools
-1. Plutus BTC Seed Scanner
-🔍 “Word-based scanning using seed phrases”
+Full video demo available on my channel: [https://youtu.be/9DyW-0Wz8gw]
+PlutusBTCBitScanner(https://drive.google.com/file/d/1g-qBns48vlAzsS6QGcHmRgzNu7O-juPv/view?usp=drive_link)
+LINK for BTCSeedScanner (SOON! Loading !)
 
-This tool generates random 12- or 24-word BIP39 seed phrases and derives addresses using:
 
-✅ BIP44
+ 🔧 Key Features
 
-✅ BIP49
+🧠 Two scanning modes: Private key (bit-range) + BIP39 seed phrase
 
-✅ BIP84
+📄 200M+ address DB: Only matches wallets with history or balance
 
-Each generated wallet is matched against a local SQLite database (addresses1111.db). If a match is found, the wallet details and private keys are logged for further investigation.
+🧮 Supports BIP44 / BIP49 / BIP84
 
-Ideal for those exploring mnemonic-based wallet generation.
+🔁 Efficient Jumping Algorithm: Scans massive keyspace fast
 
-2. Plutus BTC Bit Scanner
-🧠 “Raw private key brute-forcing within a user-defined range”
+💻 Parallel Processing: Uses all CPU cores for speed
 
-This tool generates raw Bitcoin private keys in a custom bit range (e.g., from 2^0 to 2^256) using a randomized jumping algorithm for efficient keyspace traversal.
+💾 Hit Logging: Matches saved to BTCfound.txt
 
-It supports both compressed and uncompressed address types (BIP44, BIP49, BIP84) and checks them against the database (addresses11.db).
+🔐 Remote License Validation: IP & device fingerprint bound
 
-Perfect for low-level experimentation or large-scale brute-force simulation.
+📉 Lightweight: Works on low-end machines, no setup needed
 
-✅ Features
-🔐 Remote Password Verification – Ensures that access is licensed and secured by device fingerprint
+🔐 Package Info
 
-🧠 BIP39 & Private Key Scanning – Choose between mnemonic seeds or private keys
+This toolkit includes:
 
-💽 Local Database Matching – Matches addresses against large SQLite address sets
+Plutus BTC Bit Scanner – scans private key bit ranges (0–256)
 
-⚙️ Multi-Process Support – Uses all available CPU cores for rapid scanning
+Plutus SeedScanner – generates BIP39 seed phrases (12 & 24 words)
 
-💾 Duplicate Prevention – Tracks previously scanned seeds to avoid repeats
+Password is locked to IP & device — VPN changes will invalidate access. Contact for a new key if needed.
 
-🚀 No Installation Needed – Run as an .exe file without requiring Python or dependencies
+📦 How It Works
 
-🧮 Full BIP Format Coverage – Supports BIP44, BIP49, BIP84 across both scanning methods
+Launch the .exe file
 
-🔁 Continuous Looping – Set and forget — ideal for long-term passive scanning
+Enter your license password
 
-📂 File Overview
-File/Folder	Description
-PlutusSeedScanner.py	BIP39 Seed Phrase Scanner (mnemonic-based)
-PlutusBitScanner.py	Private Key Bit Scanner (bit-range-based)
-addresses11.db	Database of BTC addresses with past balances
-generated_seeds.db	Tracks already scanned seed phrases
-english.txt	Wordlist used for seed generation
-BTCfound.txt / znalezioneBTC.txt	Output logs of found addresses
-🔐 Access & License
-Each copy of Plutus requires an access password.
+Select scan mode: keyspace or seed phrase
 
-⚠️ Passwords are bound to your IP and device.
-If you use a VPN or change IP after activation, the password will no longer work.
+Choose bit range (66–256 recommended) or generate BIP39 seeds
 
-📧 Contact for password: hacker001ethical@proton.me
-💵 Cost: $100 (paid in Bitcoin only)
-💰 BTC Address: bc1qc73kzgzwtn9r6hy24dq0r6c20zxqucw25s4n2p
-⏱️ Response time: within 1 hour after payment confirmation
+Addresses are derived and compared with the local DB
 
-❗ Legal Notice
-This software is provided for educational, ethical hacking, and research purposes only.
-Any misuse of this software is strictly discouraged.
+Matches logged automatically
 
-You are solely responsible for your actions.
+No Python or libraries required. Works fully offline.
+
+📬 Access
+
+Contact: hacker001ethical@proton.meAccess Fee: $100 in BTC
+BTC Address: bc1qc73kzgzwtn9r6hy24dq0r6c20zxqucw25s4n2p 
+Response time: usually within 1 hour
+
+⚠️ Legal Disclaimer
+
+This software is provided strictly for educational and ethical security research. The developer does not condone illegal use. 
+You are responsible for your actions.
+
+🏷️ GitHub Topics
+bitcoin
+btc
+cryptocurrency
+wallet
+wallet-recovery
+keyspace
+btc-scanner
+bip39
+bip44
+bip49
+bip84
+mnemonic
+seed-phrase
+python
+python3
+crypto-tools
+open-source
+blackhat
+ethical-hacking
+osint
+brute-force
+security
+blockchain
+blockchain-tools
+crypto-recovery
+address-scanner
+wallet-scanner
+key-recovery
+crypto
 
 📃 License
-This project is licensed under the MIT License.
-You're free to use, modify, and distribute it under the terms of that license.
 
-Youtube presentation: available soon !
+Licensed under the MIT License – see LICENSE file for details.
+
