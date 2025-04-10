@@ -1,7 +1,7 @@
 # Plutus-BTC-Toolkit-Advanced-Bitcoin-Wallet-Scanner-Suite
 Link for youtube:https://youtu.be/9DyW-0Wz8gw
-LINK for PlutusBTCBitScanner(the file is to big and I can't add it here)
- LINK for BTCSeedScanner (the file is too big and I can't add it here)
+LINK for PlutusBTCBitScanner(SOON ! loading !)
+ LINK for BTCSeedScanner (SOON! Loading !)
 
 🔐 Plutus BTC Toolkit — Advanced Bitcoin Wallet Scanner Suite
 Welcome to Plutus BTC Toolkit – a powerful, dual-program suite built for ethical researchers, penetration testers, and Bitcoin forensic analysts. This package includes two advanced scanning tools capable of identifying inactive Bitcoin wallets with past balances.
