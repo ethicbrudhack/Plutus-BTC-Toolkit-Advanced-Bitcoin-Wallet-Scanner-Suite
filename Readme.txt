@@ -1,71 +1,58 @@
-# ⚡ Plutus BTC Bit Scanner
+Plutus BTC Seed Scanner is a Python tool that generates and verifies Bitcoin BIP39 seed phrases to find matches in a local BTC address database. It supports BIP44, BIP49, and BIP84 derivation standards and runs on desktop 
 
-**Plutus BTC Bit Scanner** is a powerful Python-based tool designed to scan the Bitcoin keyspace by generating and testing private keys in specified bit ranges. The tool checks each derived address against a local database of inactive BTC wallets that have had confirmed balances in the past.
+🔐 Package Information
+This package includes two powerful tools designed for advanced Bitcoin seed scanning.
 
-It uses intelligent jumping within the keyspace to increase scanning efficiency and supports both compressed and uncompressed Bitcoin address formats.
+Please note that each password is linked to your IP address.
+If you are using a VPN and later change your IP, the password will not work again.
+Each password is valid only for one IP and one device to protect against abuse and ensure fair usage.
 
----
 
-🔐 **Package Information**
 
-This package includes **one of two powerful tools** from the Plutus suite, specifically focused on private key bitspace scanning.
+✅ Features:
 
-> ⚠️ Please note:  
-Each password is **linked to your IP and device**.  
-If you use a VPN or change your IP, the password will no longer be valid.  
-This is a security measure to ensure each license is used fairly and not abused.
+🔐 Remote Password Authentication — Verifies license remotely with device-based fingerprint
 
----
+🧠 Seed Phrase Generation — Supports 12- and 24-word BIP39 phrases
 
-✅ **Features**
+🧮 BIP Derivation — Checks BIP44, BIP49, and BIP84 address formats
 
-- 🔐 Remote Password Authentication — Verifies access securely via device fingerprint
-- 🧠 Randomized Private Key Generator — Uses efficient key jumping
-- 💻 Bit-Range Selection — You define the scan range (from 0 to 256 bits)
-- 🏦 Local Database Matching — Uses `addresses11.db` to identify inactive wallets with past balances
-- 💾 Logs All Hits — Saves all successful private key matches to `BTCfound.txt`
-- 🧮 Supports BIP44, BIP49, BIP84 — Both compressed and uncompressed
-- ⚙️ Multiprocessing — Uses all available CPU cores for faster scanning
-- 📉 Memory Efficient — Monitors RAM and prints real-time stats
-- 🔁 Endless Scanning Loop — Designed for long-term automated key searching
+📄 Local SQLite Database Matching — Uses addresses1111.db to identify active wallets
 
----
+💾 Logging — Saves previously generated seeds to avoid duplicates (generated_seeds.db)
 
-💡 **How It Works**
+🚀 Parallel Scanning — Utilizes multiprocessing for higher efficiency
 
-1. Launch the executable `.exe` file.
-2. Enter your license password when prompted.
-3. Choose your bit range (e.g. 0–10 for fast demo, or 128–256 for real scanning).
-4. The script generates private keys within that range using a randomized jumping algorithm.
-5. Each derived address (BIP44, BIP49, BIP84) is checked against the local database.
-6. Any address with past balance is logged to `BTCfound.txt`.
 
----
+💡 How It Works:
 
-✅ **This application does not require any additional installations.**  
-Just run the `.exe` file – it works completely out of the box.  
-You do **not** need Python, pip, or any external libraries.
+You start the program and enter your access password.
 
----
+The script verifies your device and password remotely.
 
-🔐 **To obtain your access password, contact:**
+It generates seed phrases (12 or 24 words).
 
-📧 Email: **hacker001ethical@proton.me**
+Derives BTC addresses for BIP44, BIP49, BIP84.
 
-💵 Access Cost: **$100** — paid **only in Bitcoin (BTC)**  
-📬 BTC Payment Address: `bc1qc73kzgzwtn9r6hy24dq0r6c20zxqucw25s4n2p`  
-💬 You will receive a reply within **1 hour** after payment.
+Compares addresses with a local database.
 
----
+Saves any hits (address matches) to znalezioneBTC.txt
 
-⚠️ **Legal Disclaimer**
+✅ This application does not require any additional installations.
 
-This software is provided strictly for **educational and ethical testing purposes**.  
-The developer does **not condone** or support any form of illegal activity.  
-You alone are responsible for how you use this software.
+It is fully self-contained and works out of the box – no need to install Python, pip, or any extra libraries. Just run the .exe file and you're ready to go.
 
----
+🔐 To obtain the access password, please contact:
+📧 hacker001ethical@proton.me
 
-📃 **License**
+💵 Access cost: $100 – paid only in Bitcoin (BTC)
+📬 BTC Payment Address: bc1qc73kzgzwtn9r6hy24dq0r6c20zxqucw25s4n2p
+💬 I usually respond within 1 hour after payment is confirmed.
 
-This project is licensed under the **MIT License**. See `LICENSE` for more information.
+⚠️ Legal Disclaimer
+This software is provided for educational and ethical testing purposes only.
+The developer does not condone or support any illegal activity.
+You are solely responsible for how you use this code.
+
+📃 License
+This project is licensed under the MIT License. See LICENSE for details.
